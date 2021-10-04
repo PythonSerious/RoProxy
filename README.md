@@ -11,10 +11,16 @@ Your payload should look something like this:
   ```json
   {
     "payload": {
-        "content": "test",
+        "content": "Cont Test",
         "embeds":[
            {
-               "title":"Test embed"
+               "fields": [
+                   {
+                      "name": "hi",
+                      "value": "hi test print",
+                      "inline": false
+                   }
+               ]
            }
        ]
     },
@@ -25,17 +31,19 @@ Your payload should look something like this:
 
 ### Lua Demo
 ```lua
-local data = {
+local Data = {
     ["payload"] = {
-        ["content"] = "Test Content.",
-        ["embeds"] = {
-            {
-            ["title"] = "Test Title.",
-                        
-            }
-                        
-        }
+        ['content'] = "Cont Test",
+        ['embeds'] = {
+            ['fields'] = {
+                {
+                    ['name'] = 'hi',
+                    ['value'] = 'hi test print',
+                    ['inline'] = false
+                }
+            },
+        },
     },
-    ["payloadurl"] = "WEBHOOK-URL-HERE"
-    }
+    ["payloadurl"] = 'WEBHOOK'
+}
 ```
