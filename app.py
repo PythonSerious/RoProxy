@@ -50,7 +50,7 @@ def webhookpost():
 
 
 if __name__ == '__main__':
-    with open(config.json, "r") as f:
+    with open("config.json", "r") as f:
         port = f.json()["port"]
     app.run(host='0.0.0.0', port=port)
 
