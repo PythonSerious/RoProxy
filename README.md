@@ -4,6 +4,8 @@
 
 ### Demo
 
+Post to: `http://<your-server-ip>:<your-port (default: 80)>/webhook`
+
 Your payload should look something like this:
 
   ```json
