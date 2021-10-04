@@ -19,3 +19,21 @@ Your payload should look something like this:
 
     "payloadurl": "YOUR-WEBHOOK-URL"
   }
+  ```
+
+### Lua Demo
+```lua
+local data = {
+    ["payload"] = {
+        ["content"] = "Test Content.",
+        ["embeds"] = {
+            {
+            ["title"] = "Test Title.",
+                        
+            }
+                        
+        }
+    },
+    ["payloadurl"] = "WEBHOOK-URL-HERE"
+    }
+```
