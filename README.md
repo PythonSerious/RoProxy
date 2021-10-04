@@ -21,7 +21,7 @@ NO: `"/webhook"`, `"/subdirectory/webhook"`
 
 ### Demo
 
-Post to: `http://<your-server-ip>:<your-port (default: 80)>/<your endpoint>`
+Post to: `http://<your-server-ip>:<your-port (default: 80)>/<your-endpoint (default: webhook)>`
 
 Your payload should look something like this:
 
