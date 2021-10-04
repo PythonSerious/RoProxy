@@ -1,4 +1,5 @@
 # RoProxy
+![Build Passing](https://app.travis-ci.com/PythonSerious/RoProxy.svg?branch=main&status=passed)
 ## A Discord webhook proxy passthrough for roblox.
 
 
