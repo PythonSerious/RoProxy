@@ -17,7 +17,7 @@ If you want just to post directly to the ip and port with no ``/webhook`` or any
 
 ### Demo
 
-Post to: `http://<your-server-ip>:<your-port (default: 80)>/webhook`
+Post to: `http://<your-server-ip>:<your-port (default: 80)>/<your endpoint>`
 
 Your payload should look something like this:
 
