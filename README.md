@@ -16,8 +16,8 @@ Your payload should look something like this:
            {
                "fields": [
                    {
-                      "name": "hi",
-                      "value": "hi test print",
+                      "name": "Field name.",
+                      "value": "Field value.",
                       "inline": false
                    }
                ]
@@ -37,8 +37,8 @@ local Data = {
         ['embeds'] = {
             ['fields'] = {
                 {
-                    ['name'] = 'hi',
-                    ['value'] = 'hi test print',
+                    ['name'] = 'Field name',
+                    ['value'] = 'Field value',
                     ['inline'] = false
                 }
             },
