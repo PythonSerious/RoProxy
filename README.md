@@ -33,17 +33,17 @@ Your payload should look something like this:
 ```lua
 local Data = {
     ["payload"] = {
-        ['content'] = "Cont Test",
-        ['embeds'] = {
-            ['fields'] = {
+        ["content"] = "Cont Test",
+        ["embeds"] = {
+            ["fields"] = {
                 {
-                    ['name'] = 'Field name',
-                    ['value'] = 'Field value',
-                    ['inline'] = false
+                    ["name"] = "Field name",
+                    ["value"] = "Field value",
+                    ["inline"] = false
                 }
             },
         },
     },
-    ["payloadurl"] = 'YOUR-WEBHOOK-URL'
+    ["payloadurl"] = "YOUR-WEBHOOK-URL"
 }
 ```
