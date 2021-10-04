@@ -13,7 +13,11 @@ Your port and endpoint are in the config.json, make sure both app.py and config.
 ```
 If you want just to post directly to the ip and port with no ``/webhook`` or any other endpoint leave no text in the quotes for endpoint.
 
-***DO NOT INCLUDE A `/` IN THE ENDPOINT CONFIG.***
+***DO NOT INCLUDE A `/` AT THE BEGINNING OF THE ENDPOINT CONFIG.***
+
+YES: `"webhook"`, `"subdirectory/webhook"`
+
+NO: `"/webhook"`, `"/subdirectory/webhook"`
 
 ### Demo
 
