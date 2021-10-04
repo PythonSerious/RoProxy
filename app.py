@@ -1,4 +1,25 @@
-from flask import Flask, request, abort, jsonify
+try:
+    import os
+    os.system('python3 -m pip install --upgrade pip')
+except:
+    pass
+
+
+try:
+    from flask import Flask, request, abort, jsonify
+
+except:
+    import os
+    os.system('pip3 install flask')
+    try:
+        from flask import Flask, request, abort, jsonify
+    except:
+        os.system('pip install flask')
+        try:
+            from flask import Flask, request, abort, jsonify
+        except:
+            os.system('python3 -m pip install flask')
+            from flask import Flask, request, abort, jsonify
 import requests
 import json
 import os
