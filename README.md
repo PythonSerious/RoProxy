@@ -44,6 +44,6 @@ local Data = {
             },
         },
     },
-    ["payloadurl"] = 'WEBHOOK'
+    ["payloadurl"] = 'YOUR-WEBHOOK-URL'
 }
 ```
