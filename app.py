@@ -30,7 +30,9 @@ with open("config.json", "r") as f:
     config = json.load(f)
 
 app = Flask(__name__)
+
 webhookRoute = config["endpoint"]
+
 @app.route(f"/{webhookRoute}", methods=["POST"])
 def webhookpost():
     try:
@@ -51,5 +53,4 @@ def webhookpost():
 
 
 if __name__ == '__main__':
-    
     app.run(host='0.0.0.0', port=int(config["port"]))
