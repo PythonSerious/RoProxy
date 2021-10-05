@@ -1,0 +1,7 @@
+{
+  "name": "RoProxy Demo",
+  "description": "A webhook proxy for requests from roblox to discord.",
+  "repository": "https://github.com/PythonSerious/RoProxy",
+  "logo": "",
+  "keywords": ["python", "flask", "roblox", "proxy"]
+}
