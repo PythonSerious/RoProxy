@@ -1,5 +1,4 @@
 {
-  "buildpacks": [{"url": "heroku/python"}],
   "name": "RoProxy Demo",
   "description": "A webhook proxy for requests from roblox to discord.",
   "repository": "https://github.com/PythonSerious/RoProxy",
