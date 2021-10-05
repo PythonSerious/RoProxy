@@ -3,7 +3,7 @@
   "description": "A webhook proxy for requests from roblox to discord.",
   "repository": "https://github.com/PythonSerious/RoProxy",
   "logo": "https://github.com/PythonSerious/RoProxy/blob/main/image.png?raw=true",
-  "keywords": ["python", "flask", "roblox", "proxy"]
+  "keywords": ["python", "flask", "roblox", "proxy"],
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
