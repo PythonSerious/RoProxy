@@ -1,3 +1,4 @@
+# PythonSerious - 2021
 try:
     import os
     os.system('python3 -m pip install --upgrade pip')
