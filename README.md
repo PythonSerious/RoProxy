@@ -1,5 +1,6 @@
 # RoProxy
 
+<img width=200px height=200px align="right" src="https://github.com/PythonSerious/RoProxy/blob/main/image.png?raw=true">
 
 ![Build Passing](https://app.travis-ci.com/PythonSerious/RoProxy.svg?branch=main&status=passed)
 
@@ -71,5 +72,5 @@ local Data = {
 }
 ```
 
-![Logo](https://github.com/PythonSerious/RoProxy/blob/main/image.png?raw=true)
+
 
