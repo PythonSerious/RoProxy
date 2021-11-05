@@ -50,7 +50,7 @@ def webhookpost():
             return '', 200
     except Exception as err:
         print(err)
-        return json.dumps({"error": str(Exception)}), 400
+        return json.dumps({"error": str(err)}), 400
 
 
 if __name__ == '__main__':
