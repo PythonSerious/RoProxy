@@ -37,7 +37,10 @@ webhookRoute = config["endpoint"]
 @app.route(f"/{webhookRoute}", methods=["POST"])
 def webhookpost():
     try:
-        jsonfile = request.json
+        try:
+            jsonfile = request.json
+        except:
+            jsonfile = json.loads(request.data)
         payloadurl = str(jsonfile['payloadurl'])
         result = requests.post(payloadurl, json=jsonfile['payload'])
         try:
