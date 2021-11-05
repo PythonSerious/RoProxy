@@ -38,10 +38,14 @@ webhookRoute = config["endpoint"]
 def webhookpost():
     try:
         try:
+            print(request.json)
             jsonfile = request.json
+            payloadurl = str(jsonfile['payloadurl'])
+
         except:
+            print(request.data)
             jsonfile = json.loads(request.data)
-        payloadurl = str(jsonfile['payloadurl'])
+            payloadurl = str(jsonfile['payloadurl'])
         result = requests.post(payloadurl, json=jsonfile['payload'])
         try:
             result.raise_for_status()
@@ -50,9 +54,8 @@ def webhookpost():
             return json.dumps({'error': str(err)}), 400
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
-            return '', 200
+            return 'Payload delivered successfully.', 200
     except Exception as err:
-        raise err
         return json.dumps({"error": str(err)}), 400
 
 
