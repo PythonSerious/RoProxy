@@ -11,6 +11,9 @@
 
 # Setup
 
+To install on your own server: `git clone https://github.com/PythonSerious/RoProxy.git`
+
+
 Your port and endpoint are in the config.json, make sure both app.py and config.json are in the same folder.
 ```json
 {
