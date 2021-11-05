@@ -38,12 +38,10 @@ webhookRoute = config["endpoint"]
 def webhookpost():
     try:
         try:
-            print(request.json)
             jsonfile = request.json
             payloadurl = str(jsonfile['payloadurl'])
 
         except:
-            print(request.data)
             jsonfile = json.loads(request.data)
             payloadurl = str(jsonfile['payloadurl'])
         result = requests.post(payloadurl, json=jsonfile['payload'])
