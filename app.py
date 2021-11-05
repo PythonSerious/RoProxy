@@ -49,7 +49,7 @@ def webhookpost():
             print("Payload delivered successfully, code {}.".format(result.status_code))
             return '', 200
     except Exception as err:
-        print(err)
+        raise err
         return json.dumps({"error": str(err)}), 400
 
 
